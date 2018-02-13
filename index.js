@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const bot = new Discord.Client()
 
-bot.login('NDEyNTQyMDEwODk3OTg5NjMz.DWL-tQ.KlknPKHtMN-Hq1hMrpJq1Hy1vIA')
+bot.login(process.env.TOKEN)
 
 bot.on('message', function (message) {
     if (message.content === 'Bonjour') {
